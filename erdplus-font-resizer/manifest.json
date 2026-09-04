@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "ERDPlus Font Resizer & Auto Fit",
+  "version": "1.0.0",
+  "description": "Customize ERDPlus node text and sizing without changing node positions.",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://erdplus.com/*",
+    "https://www.erdplus.com/*",
+    "http://erdplus.com/*",
+    "http://www.erdplus.com/*"
+  ],
+  "action": {
+    "default_title": "ERDPlus Font Resizer",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://erdplus.com/*",
+        "https://www.erdplus.com/*",
+        "http://erdplus.com/*",
+        "http://www.erdplus.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

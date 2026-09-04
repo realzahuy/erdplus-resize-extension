@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERDPlus Font Resizer</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>ERDPlus Font Resizer</h1>
+
+      <label class="field" for="fontSize">
+        <span>Font size</span>
+        <span class="input-with-unit">
+          <input id="fontSize" type="number" min="10" max="24" step="1" value="11" />
+          <span>px</span>
+        </span>
+      </label>
+
+      <label class="checkbox-field" for="autoFit">
+        <input id="autoFit" type="checkbox" checked />
+        <span>Auto fit nodes</span>
+      </label>
+
+      <label class="checkbox-field" for="showGrid">
+        <input id="showGrid" type="checkbox" checked />
+        <span>Show grid</span>
+      </label>
+
+      <label class="field" for="horizontalPadding">
+        <span>Horizontal padding</span>
+        <span class="input-with-unit">
+          <input id="horizontalPadding" type="number" min="0" max="50" step="1" value="12" />
+          <span>px</span>
+        </span>
+      </label>
+
+      <label class="field" for="verticalPadding">
+        <span>Vertical padding</span>
+        <span class="input-with-unit">
+          <input id="verticalPadding" type="number" min="0" max="50" step="1" value="8" />
+          <span>px</span>
+        </span>
+      </label>
+
+      <div class="actions">
+        <button id="apply" class="primary" type="button">Apply</button>
+        <button id="reset" type="button">Reset</button>
+      </div>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

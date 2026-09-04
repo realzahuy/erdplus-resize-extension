@@ -1,0 +1,112 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 300px;
+  margin: 0;
+  color: #202124;
+  background: #ffffff;
+}
+
+.popup {
+  padding: 16px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.field,
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 36px;
+  font-size: 13px;
+}
+
+.checkbox-field {
+  justify-content: flex-start;
+  margin: 5px 0 8px;
+}
+
+.checkbox-field input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+.input-with-unit {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #5f6368;
+  white-space: nowrap;
+}
+
+input[type="number"] {
+  width: 58px;
+  padding: 5px 6px;
+  border: 1px solid #c7c9cc;
+  border-radius: 4px;
+  color: #202124;
+  font: inherit;
+}
+
+input[type="number"]:focus {
+  outline: 2px solid #8ab4f8;
+  outline-offset: 1px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+button {
+  flex: 1;
+  min-height: 32px;
+  padding: 6px 12px;
+  border: 1px solid #c7c9cc;
+  border-radius: 4px;
+  color: #202124;
+  background: #f8f9fa;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+
+button:hover {
+  background: #eef0f1;
+}
+
+button.primary {
+  border-color: #1a73e8;
+  color: #ffffff;
+  background: #1a73e8;
+}
+
+button.primary:hover {
+  background: #1765cc;
+}
+
+.status {
+  min-height: 16px;
+  margin: 10px 0 0;
+  color: #5f6368;
+  font-size: 11px;
+}
+
+.status.error {
+  color: #b3261e;
+}
