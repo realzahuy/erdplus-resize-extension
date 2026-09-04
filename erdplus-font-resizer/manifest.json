@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "ERDPlus Font Resizer & Auto Fit",
+  "name": "ERDPlus Font Resizer",
   "version": "1.0.0",
   "description": "Customize ERDPlus node text and sizing without changing node positions.",
   "permissions": [
